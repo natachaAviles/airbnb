@@ -6354,8 +6354,25 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+.row {
+  margin-bottom: 0px; }
+
 #datepicker p {
-  color: pink; }
+  font-family: 'Roboto', sans-serif; }
+#datepicker .container {
+  margin-top: 4vh;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  height: 18vh; }
+#datepicker .btn-large {
+  margin-top: 3vh;
+  background-color: #FF7E82;
+  box-shadow: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: lowercase; }
 
 img {
   width: 100%; }

@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<title>Air bnb</title>
 	<meta charset="utf-8">
 </head>
 <body>
-<!--DATEPICKER-->
+	<!--DATEPICKER-->
 	<section id="datepicker">
-		<div class="row">
-			<div class="col m4 s12">
-				<p>Dónde</p>
-				<input type="text" id="autocomplete-input" class="autocomplete">
-				<label for="autocomplete-input">Autocomplete</label>
-			</div>
-			<div class="col m4 s12">
-				<div class="row">
-					<p>Cuándo</p>
-					<div class="col s6">
-						<input type="date" class="datepicker">
+		<div class="container z-depth-1">
+			<div class="row">
+				<div class="col m4 s12">
+					<p>Dónde</p>
+					<input type="text" id="autocomplete-input" class="autocomplete">
+				</div>
+				<div class="col m4 s12">
+					<div class="row">
+						<p>Cuándo</p>
+						<div class="col s6">
+							<input type="date" class="datepicker">
+						</div>
+						<div class="col s6">
+							<input type="date" class="datepicker">
+						</div>
 					</div>
-					<div class="col s6">
-						<p><i class="material-icons">trending_flat</i>Salida</p>
+				</div>
+				<div class="col m4 s12 input-field">
+					<div class="row">
+						<div class="input-field col s6">
+							<select>
+								<option value="" disabled selected>Choose your option</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+							<label>Materialize Select</label>
+						</div>
+						<div class="col s6">
+							<a class="waves-effect waves-light btn-large">Buscar</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col m4 s12">
-				
-			</div>
 		</div>
 	</section>
-<!--TERMINA DATEPICKER-->
-<!--EXPERIENCIAS-->
+	<!--TERMINA DATEPICKER-->
+	<!--EXPERIENCIAS-->
 	<section id="experiencias">
 		<div class="container">
 			<div col s12 m12 l12>
@@ -59,12 +74,73 @@
 			</div>
 		</div>
 	</section>
-<!--TERMINA EXPERIENCIAS-->
+	<!--TERMINA EXPERIENCIAS-->
+	<!--FOOTER-->
+	<footer>
+		<div class="container">
+			<div class="wrapper">
+				<section class="selections">
+					<select name="country" class="country">
+						<option>Español</option>
+					</select>
+					<select name="curency">
+						<option>CPL</option>
+						<option>Euro</option>
+						<option>USD</option>
+					</select></section>
+					<!--selection-->
+					<section class="about">
+						<h1>Airnbn</h1>
+						<ul>
+							<li><a href="#">Acerca de</a></li>
+							<li><a href="#">Empleo</a></li>
+							<li><a href="#">Prensa</a></li>
+							<li><a href="#">Politicas</a></li>
+							<li><a href="#">Ayuda</a></li>
+						</ul>
+					</section>
+					<section class="discover">
+						<h1>Descubre Airbnb</h1>
+						<ul>
+							<li><a href="#">Confianza y seguridad</a></li>
+							<li><a href="#">Invitaciones</a></li>
+							<li><a href="#">Airbnb Action</a></li>
+							<li><a href="#">Viajes de Negocio</a></li>
+							<li><a href="#">Guias</a></li>
+						</ul>
+					</section>
+					<section class="hosts">
+						<h1>Hospedar</h1>
+						<ul>
+							<li><a href="#">Razones para Hospedar</a></li>
+							<li><a href="#">Hospitalidad</a></li>
+							<li><a href="#">Ser un anfitrión responsable</a></li>
+						</ul>
+					</section>
+				</div>
+				<!--wrapper end-->
+				<div class="row">
+					<div class="col s3">
+						<img src="" alt="logo">
+						<p>&copy;Airbnb, Inc.</p>
+					</div>
+					<div class="col s9">
+						<section class="footer">
+							<a href="#">Términos y Privacidad<a>
+								<a href="#">Mapa del sitio<a>
+									<a href="#" class="social fa fa-facebook"><a>
+										<a href="#" class="social fa fa-twitter"></a>
+										<a href="#" class="social fa fa-instagram"></a>
+									</section>
+								</div>
+							</div>
 
-	 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-
-
-</body>
+						</div>
+					</footer>
+					<!--TERMINA FOOTER-->
+	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+	</body>
 </html>
