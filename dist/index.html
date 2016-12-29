@@ -19,25 +19,38 @@
 				</div>
 				<div class="col m4 s12">
 					<div class="row">
-						<p>Cuándo</p>
-						<div class="col s6">
-							<input type="date" class="datepicker">
-						</div>
-						<div class="col s6">
-							<input type="date" class="datepicker">
+						<div id="floating-panel">
+						    <b>Cuando: </b>
+						    <select id="start">
+						      <option value="chicago, il">Chicago</option>
+						      <option value="st louis, mo">St Louis</option>
+						      <option value="joplin, mo">Joplin, MO</option>
+						      <option value="oklahoma city, ok">Oklahoma City</option>
+						      <option value="amarillo, tx">Amarillo</option>
+						      <option value="gallup, nm">Gallup, NM</option>
+						      <option value="flagstaff, az">Flagstaff, AZ</option>
+						      <option value="winona, az">Winona</option>
+						      <option value="kingman, az">Kingman</option>
+						      <option value="barstow, ca">Barstow</option>
+						      <option value="san bernardino, ca">San Bernardino</option>
+						      <option value="los angeles, ca">Los Angeles</option>
+						    </select>
 						</div>
 					</div>
 				</div>
 				<div class="col m4 s12 input-field">
 					<div class="row">
+
+						<p>Huespedes</p>
 						<div class="input-field col s6">
 							<select>
-								<option value="" disabled selected>Choose your option</option>
-								<option value="1">Option 1</option>
-								<option value="2">Option 2</option>
-								<option value="3">Option 3</option>
+								<option value="1">1 Huesped</option>
+								<option value="2">2 Huespedes</option>
+								<option value="3">3 Huespedes</option>
+								<div class="divider"></div>
+								<option value="4">1 Bebe</option>
 							</select>
-							<label>Materialize Select</label>
+
 						</div>
 						<div class="col s6">
 							<a class="waves-effect waves-light btn-large">Buscar</a>
@@ -143,7 +156,7 @@
 					<!--TERMINA FOOTER-->
 	<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/script.min.js"></script>
 	</body>
 </html>

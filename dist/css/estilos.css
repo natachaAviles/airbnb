@@ -6355,7 +6355,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 .row {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  margin-right: 0rem; }
 
 #datepicker p {
   font-family: 'Roboto', sans-serif; }
@@ -6364,11 +6365,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-bottom: 4vh;
   border: 1px solid #E3E3E3;
   border-radius: 5px;
-  padding-left: 3vh;
-  padding-right: 3vh;
-  height: 18vh; }
+  padding-left: 4vh;
+  padding-right: 4vh; }
+#datepicker .input-field {
+  margin-top: 0rem; }
 #datepicker .btn-large {
-  margin-top: 3vh;
   background-color: #FF7E82;
   box-shadow: none;
   border-radius: 5px;
