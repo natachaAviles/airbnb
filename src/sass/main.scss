@@ -1,7 +1,7 @@
 @import "materialize-css/sass/materialize.scss";
-@import "variables.scss";
-@import "base.scss";
 @import "variables";
+@import "mixins";
 @import "base";
 @import "datepicker";
 @import "experiencias";
+
