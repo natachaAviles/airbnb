@@ -61,7 +61,7 @@
     @while $i <= $num-cols {
       $perc: unquote((100 / ($num-cols / $i)) + "%");
       &.s#{$i} {
-        width: $perc;
+        width: 100%;
         margin-left: auto;
         left: auto;
         right: auto;

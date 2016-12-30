@@ -13,11 +13,11 @@
 	<section id="datepicker">
 		<div class="container z-depth-1">
 			<div class="row">
-				<div class="col m4 s12">
+				<div class="col s12 m4 l4 titulos">
 					<div id="floating-panel">
-		                <b>Cuando: </b>
+		                <span>Dónde</span>
 		                <select id="start">
-		                  <option value="chicago, il">Chicago</option>
+		                  <option class="titulos" value="chicago, il">Destino, cuidad, dirección</option>
 		                  <option value="st louis, mo">St Louis</option>
 		                  <option value="joplin, mo">Joplin, MO</option>
 		                  <option value="oklahoma city, ok">Oklahoma City</option>
@@ -32,23 +32,31 @@
 		                </select>
 		            </div>
 				</div>
-				<div class="col m4 s12">
+				<div class="col s12 m4 l4 titulos">
+				<div id="floating-panel">
 					<div class="row">
-						<div class="row">
-            <p>Cuándo</p>
-            <div class="col s6">
-              <input type="date" class="datepicker">
-            </div>
-            <div class="col s6">
-              <input type="date" class="datepicker">
-            </div>
-          </div>
+						<div class="col s12 m6 l6">
+							<div class="row">
+					            <span>Cuándo</span>
+					            <div class="col s6">
+					              <input type="date" class="datepicker">
+					            </div>
+				        	</div>
+						</div>
+						<div class="col s12 m6 l6">
+							<div class="row espacio">
+					            <div class="col s6">
+					              <input type="date" class="datepicker">
+					            </div>
+				        	</div>
+						</div>
 					</div>
 				</div>
-				<div class="col m4 s12 input-field">
+				</div>
+				<div class="col s12 m4 l4 titulos">
+				<div id="floating-panel">
 					<div class="row">
-
-						<p>Huespedes</p>
+						<span>Huespedes</span>
 						<div class="input-field col s6">
 							<select>
 								<option value="1">1 Huesped</option>
@@ -57,11 +65,11 @@
 								<div class="divider"></div>
 								<option value="4">1 Bebe</option>
 							</select>
-
 						</div>
 						<div class="col s6">
 							<a class="waves-effect waves-light btn-large">Buscar</a>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>
