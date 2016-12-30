@@ -6,13 +6,13 @@
 #datepicker {
 	p{
 		font-family: 'Roboto', sans-serif;
-		font-size: 18px;
 	}
 	.container{
 		margin-top:4vh;
 		margin-bottom:4vh;
 		border:1px solid $grayborder;
 		border-radius:5px;
+		padding-top:1vh;
 		padding-left:4vh;
 		padding-right:4vh;
 	}
@@ -25,33 +25,7 @@
 		border-radius:5px;
 		font-weight:bold;
 		text-transform:lowercase;
+		margin-top:2vh;
 	}
 
-}
-
-.select-wrapper input.select-dropdown {
-	position: relative;
-	cursor: pointer;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid #9e9e9e;
-	outline: none;
-	height: 3rem;
-	line-height: 3rem;
-	width: 100%;
-	margin: 10 0 20px 0;
-	padding: 0;
-	display: block;
-	font-size: 17px !important;
-	color: #bfbebe;
-}
-
-.titulos{
-	position:relative;
-	top: 2em;
-}
-
-.espacio{
-	position:relative;
-	top:1.4em;
 }
