@@ -6521,4 +6521,12 @@ img {
 img {
   width: 100%; }
 
+footer {
+  border-top: 1px solid #E3E3E3;
+  padding: 4vh; }
+  footer a {
+    color: #E3E3E3; }
+  footer select {
+    margin-top: 4vh; }
+
 /*# sourceMappingURL=estilos.css.map */
