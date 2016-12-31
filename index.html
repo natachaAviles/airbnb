@@ -13,11 +13,11 @@
 	<section id="datepicker">
 		<div class="container z-depth-1">
 			<div class="row">
-				<div class="col m4 s12">
+				<div class="col s12 m4 l4 titulos">
 					<div id="floating-panel">
-		                <b>Cuando: </b>
+		                <span>Dónde</span>
 		                <select id="start">
-		                  <option value="chicago, il">Chicago</option>
+		                  <option class="titulos" value="chicago, il">Destino, cuidad, dirección</option>
 		                  <option value="st louis, mo">St Louis</option>
 		                  <option value="joplin, mo">Joplin, MO</option>
 		                  <option value="oklahoma city, ok">Oklahoma City</option>
@@ -32,43 +32,47 @@
 		                </select>
 		            </div>
 				</div>
-				<div class="col m4 s12">
-					<div class="row">
+				<div class="col s12 m4 l4 titulos">
+					<div id="floating-panel">
+						<span>Cuándo</span>
 						<div class="row">
-            <p>Cuándo</p>
-            <div class="col s6">
-              <input type="date" class="datepicker">
-            </div>
-            <div class="col s6">
-              <input type="date" class="datepicker">
-            </div>
-          </div>
+							<div class="col s12 m6 l6">
+								<div class="col s6">
+									<input type="date" class="datepicker" value="Llegada">
+								</div>
+							</div>
+							<div class="col s12 m6 l6">
+								<div class="col s6">
+									<span></span>
+									<input type="date" class="datepicker" value="Salida">
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
-				<div class="col m4 s12 input-field">
-					<div class="row">
-
-						<p>Huespedes</p>
-						<div class="input-field col s6">
-							<select>
-								<option value="1">1 Huesped</option>
-								<option value="2">2 Huespedes</option>
-								<option value="3">3 Huespedes</option>
-								<div class="divider"></div>
-								<option value="4">1 Bebe</option>
-							</select>
-
-						</div>
-						<div class="col s6">
-							<a class="waves-effect waves-light btn-large">Buscar</a>
+				<div class="col s12 m4 l4 titulos">
+					<div id="floating-panel">
+						<div class="row">
+							<div class="input-field col m6">
+								<span>Huespedes</span>
+								<select>
+									<option value="1">1 Huesped</option>
+									<option value="2">2 Huespedes</option>
+									<option value="3">3 Huespedes</option>
+									<div class="divider"></div>
+									<option value="4">1 Bebe</option>
+								</select>
+							</div>
+							<div class="col m6">
+								<a class="waves-effect waves-light btn-large">Buscar</a>
+							</div>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
-		</div>
 	</section>
-	<br>
-	<br>
 	<!--TERMINA DATEPICKER-->
 	<!--EXPERIENCIAS-->
 	<section id="experiencias">
@@ -101,66 +105,57 @@
 	<!--FOOTER-->
 	<footer>
 		<div class="container">
-			<div class="wrapper">
-				<section class="selections">
-					<select name="country" class="country">
-						<option>Español</option>
+			<div class="row">
+				<div class="col m3 s12">
+			
+					<select class="browser-default">
+						<option value="" disabled selected>Español</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
 					</select>
-					<select name="curency">
-						<option>CPL</option>
-						<option>Euro</option>
-						<option>USD</option>
-					</select></section>
-					<!--selection-->
-					<section class="about">
-						<h1>Airnbn</h1>
-						<ul>
-							<li><a href="#">Acerca de</a></li>
-							<li><a href="#">Empleo</a></li>
-							<li><a href="#">Prensa</a></li>
-							<li><a href="#">Politicas</a></li>
-							<li><a href="#">Ayuda</a></li>
-						</ul>
-					</section>
-					<section class="discover">
-						<h1>Descubre Airbnb</h1>
-						<ul>
-							<li><a href="#">Confianza y seguridad</a></li>
-							<li><a href="#">Invitaciones</a></li>
-							<li><a href="#">Airbnb Action</a></li>
-							<li><a href="#">Viajes de Negocio</a></li>
-							<li><a href="#">Guias</a></li>
-						</ul>
-					</section>
-					<section class="hosts">
-						<h1>Hospedar</h1>
-						<ul>
-							<li><a href="#">Razones para Hospedar</a></li>
-							<li><a href="#">Hospitalidad</a></li>
-							<li><a href="#">Ser un anfitrión responsable</a></li>
-						</ul>
-					</section>
+					<select class="browser-default">
+						<option value="" disabled selected>USD</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
 				</div>
-				<!--wrapper end-->
-				<div class="row">
-					<div class="col s3">
-						<img src="" alt="logo">
-						<p>&copy;Airbnb, Inc.</p>
-					</div>
-					<div class="col s9">
-						<section class="footer">
-							<a href="#">Términos y Privacidad<a>
-								<a href="#">Mapa del sitio<a>
-									<a href="#" class="social fa fa-facebook"><a>
-										<a href="#" class="social fa fa-twitter"></a>
-										<a href="#" class="social fa fa-instagram"></a>
-									</section>
-								</div>
-							</div>
-
-						</div>
-					</footer>
-					<!--TERMINA FOOTER-->
+				<div class="col m3 s12">
+					<h5>Air bnb</h5>
+					<ul>
+						<li><a href="#">Acerca de</a></li>
+						<li><a href="#">Emplea</a></li>
+						<li><a href="#">Prensa</a></li>
+						<li><a href="#">Politicas</a></li>
+						<li><a href="#">Prensa</a></li>
+					</ul>
+				</div>
+				<div class="col m3 s12">
+					<h5>Descubre Airbnb</h5>
+					<ul>
+						<li><a href="#">Confianza y seguridad</a></li>
+						<li><a href="#">Invitaciones</a></li>
+						<li><a href="#">Airbnb Action</a></li>
+						<li><a href="#">Viajes de negocios</a></li>
+						<li><a href="#">Guías</a></li>
+					</ul>
+				</div>
+				<div class="col m3 s12">
+					<h5>Hospedar</h5>
+					<ul>
+						<li><a href="#">Razones para hospedar</a></li>
+						<li><a href="#">Hospitalidad</a></li>
+						<li><a href="#">Ser un anfitrión</a></li>
+						<li><a href="#">Responsable</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<a href="#" class="right">Terminos y privacidad</a>
+		<a href="#" class="right">Mapa del sitio</a>
+	</footer>
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="dist/js/materialize.js"></script>

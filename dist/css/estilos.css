@@ -2562,57 +2562,57 @@ input[type=range] + .thumb {
     .row .col[class*="push-"], .row .col[class*="pull-"] {
       position: relative; }
     .row .col.s1 {
-      width: 8.33333%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s2 {
-      width: 16.66667%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s3 {
-      width: 25%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s4 {
-      width: 33.33333%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s5 {
-      width: 41.66667%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s6 {
-      width: 50%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s7 {
-      width: 58.33333%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s8 {
-      width: 66.66667%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s9 {
-      width: 75%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s10 {
-      width: 83.33333%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s11 {
-      width: 91.66667%;
+      width: 100%;
       margin-left: auto;
       left: auto;
       right: auto; }
@@ -6365,6 +6365,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-bottom: 4vh;
   border: 1px solid #E3E3E3;
   border-radius: 5px;
+  padding-top: 1vh;
   padding-left: 4vh;
   padding-right: 4vh; }
 #datepicker .input-field {
@@ -6374,7 +6375,8 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   box-shadow: none;
   border-radius: 5px;
   font-weight: bold;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  margin-top: 2vh; }
 
 img {
   width: 100%; }
@@ -6516,29 +6518,15 @@ img {
   cursor: default;
   z-index: 1; }
 
-.row {
-  margin-bottom: 0px;
-  margin-right: 0rem; }
-
-#datepicker p {
-  font-family: 'Roboto', sans-serif; }
-#datepicker .container {
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-  border: 1px solid #E3E3E3;
-  border-radius: 5px;
-  padding-left: 4vh;
-  padding-right: 4vh; }
-#datepicker .input-field {
-  margin-top: 0rem; }
-#datepicker .btn-large {
-  background-color: #FF7E82;
-  box-shadow: none;
-  border-radius: 5px;
-  font-weight: bold;
-  text-transform: lowercase; }
-
 img {
   width: 100%; }
+
+footer {
+  border-top: 1px solid #E3E3E3;
+  padding: 4vh; }
+  footer a {
+    color: #E3E3E3; }
+  footer select {
+    margin-top: 4vh; }
 
 /*# sourceMappingURL=estilos.css.map */
