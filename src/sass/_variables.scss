@@ -1,2 +1,24 @@
 $grayborder:#E3E3E3;
 $maincolor:#FF7E82;
+//variables range
+$n: 14;
+$k: 9;
+$unit: 1.875em;
+$space: .125em;
+
+$input-top: 7.5em;
+$input-lat: .5em;
+$input-h: 2.5em;
+$input-bg: linear-gradient(#fff, #bad798) repeat-x 0 100% #fff;
+
+$track-w: $n*$unit + ($n - 1)*$space;
+$track-h: .375em;
+
+$thumb-w: 1em;
+$thumb-h: 1.25em;
+$thumb-bw: ($unit - $thumb-w)/2;
+$thumb-c: #84d445;
+$thumb-s1: calc(50% - 1px);
+$thumb-s2: calc(50% + 1px);
+
+$arrow-l: .375em;

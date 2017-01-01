@@ -1,3 +1,31 @@
 @mixin maxi-imge($ancho) {
 	width:$ancho;
 }
+//mixins range search page
+@mixin track() {
+  width: $track-w; height: $track-h;
+  border-radius: $track-h/2;
+  box-shadow: inset 0 -.125em .125em #817f81;
+  background: #f3f3f3;
+}
+
+@mixin thumb() {
+  box-sizing: border-box;
+  border: solid 0 transparent;
+  border-width: 0 $thumb-bw;
+  padding: .1875em;
+  width: $unit; height: $thumb-h;
+  background:
+    linear-gradient(-45deg, 
+        transparent $thumb-s1, $thumb-c $thumb-s1, 
+        $thumb-c $thumb-s2, transparent $thumb-s2) 
+      no-repeat 0 0 content-box, 
+    linear-gradient(45deg, 
+        transparent $thumb-s1, $thumb-c $thumb-s1, 
+        $thumb-c $thumb-s2, transparent $thumb-s2) 
+      no-repeat 100% 0 content-box, 
+    linear-gradient($thumb-c, $thumb-c) no-repeat 50% 50%,
+    linear-gradient(rgba(#141313, .5), rgba(#141313, .5)) content-box,
+    linear-gradient(to right top, #605f5f 50%, #141313 50%) padding-box;
+  background-size: 50% 50%, 50% 50%, .125em $thumb-h/2, 100% 100%, 100% 100%;
+}
