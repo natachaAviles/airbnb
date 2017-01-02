@@ -4,6 +4,8 @@
 	margin-right:0rem;
 }
 #datepicker {
+	position: relative;
+
 	p{
 		font-family: 'Roboto', sans-serif;
 	}
@@ -12,7 +14,7 @@
 		margin-bottom:4vh;
 		border:1px solid $grayborder;
 		border-radius:5px;
-		padding-top:1vh;
+		padding-top:4vh;
 		padding-left:4vh;
 		padding-right:4vh;
 	}
@@ -29,3 +31,9 @@
 	}
 
 }
+
+//mas pruieba
+.padd {
+	padding: 0em 1em;
+}
+

@@ -9,52 +9,99 @@
 	<meta charset="utf-8">
 </head>
 <body>
+	<!--NAVBAR-->
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo"><img src="dist/img/favicon.PNG"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">Conviértete en anfitrión</a></li>
+				<li><a href="badges.html">Ayuda</a></li>
+				<li><a href="collapsible.html">Resgístrate</a></li>
+				<li><a href="collapsible.html">Iniciar sección</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--TERMINA NAVBAR-->
+	
+	<!--CARRUSEL-->	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<div class="slider">
+					<ul class="slides">
+						<li>
+							<img src="dist/img/posters_01.jpg"> <!-- random image -->
+							<div class="caption">
+								<h3>Te espera un mundo de viajes inolvidables.</h3>
+								<h5>Alojamientos, experiencias y lugares, todo en una sola aplicación.</h5>
+								<a class="waves-effect waves-light btn">Descubre las últimas novedades</a>
+							</div>
+						</li>
+						<li>
+							<img src="dist/img/posters_02.png"> <!-- random image -->
+							<div class="caption">
+								<h3>Experiencias de Airbnb</h3>
+								<h5>Conviértete en un maestro del sushi o en una leyenda del surf.</h5>
+								<a class="waves-effect waves-light btn">Descubre las últimas novedades</a>
+							</div>
+						</li>
+						<li>
+							<img src="dist/img/posters_03.pgn.png"> <!-- random image -->
+							<div class="caption">
+								<h3>Lugares de Airbnb</h3>
+								<h5>Elige una ciudad y descubre todos sus <br> rincones junto a expertos locales como Woody.</h5>
+								<a class="waves-effect waves-light btn">Descubre las últimas novedades</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--CARRUSEL-->	
 	<!--DATEPICKER-->
+	</div>
 	<section id="datepicker">
 		<div class="container z-depth-1">
 			<div class="row">
-				<div class="col s12 m4 l4 titulos">
-					<div id="floating-panel">
-		                <span>Dónde</span>
-		                <select id="start">
-		                  <option class="titulos" value="chicago, il">Destino, cuidad, dirección</option>
-		                  <option value="st louis, mo">St Louis</option>
-		                  <option value="joplin, mo">Joplin, MO</option>
-		                  <option value="oklahoma city, ok">Oklahoma City</option>
-		                  <option value="amarillo, tx">Amarillo</option>
-		                  <option value="gallup, nm">Gallup, NM</option>
-		                  <option value="flagstaff, az">Flagstaff, AZ</option>
-		                  <option value="winona, az">Winona</option>
-		                  <option value="kingman, az">Kingman</option>
-		                  <option value="barstow, ca">Barstow</option>
-		                  <option value="san bernardino, ca">San Bernardino</option>
-		                  <option value="los angeles, ca">Los Angeles</option>
-		                </select>
-		            </div>
-				</div>
-				<div class="col s12 m4 l4 titulos">
-					<div id="floating-panel">
-						<span>Cuándo</span>
-						<div class="row">
-							<div class="col s12 m6 l6">
-								<div class="col s6">
-									<input type="date" class="datepicker" value="Llegada">
-								</div>
-							</div>
-							<div class="col s12 m6 l6">
-								<div class="col s6">
-									<span></span>
-									<input type="date" class="datepicker" value="Salida">
-								</div>
-							</div>
-						</div>
-
+				<div class="col s12 m4 l4">
+					<div class="padd" id="floating-panel">
+						<span>Dónde</span>
+						<select id="start">
+							<option class="titulos" value="chicago, il">Destino, cuidad, dirección</option>
+							<option value="st louis, mo">St Louis</option>
+							<option value="joplin, mo">Joplin, MO</option>
+							<option value="oklahoma city, ok">Oklahoma City</option>
+							<option value="amarillo, tx">Amarillo</option>
+							<option value="gallup, nm">Gallup, NM</option>
+							<option value="flagstaff, az">Flagstaff, AZ</option>
+							<option value="winona, az">Winona</option>
+							<option value="kingman, az">Kingman</option>
+							<option value="barstow, ca">Barstow</option>
+							<option value="san bernardino, ca">San Bernardino</option>
+							<option value="los angeles, ca">Los Angeles</option>
+						</select>
 					</div>
 				</div>
-				<div class="col s12 m4 l4 titulos">
-					<div id="floating-panel">
+
+				<div class="col s12 m4 l4">
+					<div class="padd" id="floating-panel">
+						<span class="lef">Cuándo</span>
 						<div class="row">
-							<div class="input-field col m6">
+							<div class="col s12 m6 l6">
+								<input type="date" class="datepicker" value="Llegada">
+							</div>
+							<div class="col s12 m6 l6">
+								<span></span>
+								<input type="date" class="datepicker" value="Salida">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4 l4">
+					<div class="padd" id="floating-panel">
+						<div class="row">
+							<div class="col s12 m6 l6">
 								<span>Huespedes</span>
 								<select>
 									<option value="1">1 Huesped</option>
@@ -64,20 +111,22 @@
 									<option value="4">1 Bebe</option>
 								</select>
 							</div>
-							<div class="col m6">
-								<a class="waves-effect waves-light btn-large">Buscar</a>
+							<div class="col s12 m6 l6">
+								<a class="waves-effect waves-light btn">Buscar</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				</div>
+				
 			</div>
+		</div>
 	</section>
 	<!--TERMINA DATEPICKER-->
 	<!--EXPERIENCIAS-->
 	<section id="experiencias">
 		<div class="container">
-			<div col s12 m12 l12>
+			<div class="row">
+				<div col s12 m12 l12>
 				<h5>Experiencias</h5>
 				<br>
 				<div class="row">
@@ -99,15 +148,19 @@
 					</div>
 				</div>
 			</div>
+
+			</div>
+			
 		</div>
 	</section>
 	<!--TERMINA EXPERIENCIAS-->
+	<br>
 	<!--FOOTER-->
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col m3 s12">
-			
+
 					<select class="browser-default">
 						<option value="" disabled selected>Español</option>
 						<option value="1">Option 1</option>
@@ -155,10 +208,11 @@
 		<div class="divider"></div>
 		<a href="#" class="right">Terminos y privacidad</a>
 		<a href="#" class="right">Mapa del sitio</a>
-	</footer>
-	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="dist/js/materialize.js"></script>
-	<script type="text/javascript" src="dist/js/script.min.js"></script>
+		</footer
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="dist/js/materialize.js"></script>
+		<script type="text/javascript" src="dist/js/script.min.js"></script>
+		<script type="text/javascript" src="src/js/main.js"></script>	
 	</body>
-</html>
+	</html>

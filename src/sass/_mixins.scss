@@ -16,16 +16,75 @@
   padding: .1875em;
   width: $unit; height: $thumb-h;
   background:
-    linear-gradient(-45deg, 
-        transparent $thumb-s1, $thumb-c $thumb-s1, 
-        $thumb-c $thumb-s2, transparent $thumb-s2) 
-      no-repeat 0 0 content-box, 
-    linear-gradient(45deg, 
-        transparent $thumb-s1, $thumb-c $thumb-s1, 
-        $thumb-c $thumb-s2, transparent $thumb-s2) 
-      no-repeat 100% 0 content-box, 
-    linear-gradient($thumb-c, $thumb-c) no-repeat 50% 50%,
-    linear-gradient(rgba(#141313, .5), rgba(#141313, .5)) content-box,
-    linear-gradient(to right top, #605f5f 50%, #141313 50%) padding-box;
+  linear-gradient(-45deg, 
+    transparent $thumb-s1, $thumb-c $thumb-s1, 
+    $thumb-c $thumb-s2, transparent $thumb-s2) 
+  no-repeat 0 0 content-box, 
+  linear-gradient(45deg, 
+    transparent $thumb-s1, $thumb-c $thumb-s1, 
+    $thumb-c $thumb-s2, transparent $thumb-s2) 
+  no-repeat 100% 0 content-box, 
+  linear-gradient($thumb-c, $thumb-c) no-repeat 50% 50%,
+  linear-gradient(rgba(#141313, .5), rgba(#141313, .5)) content-box,
+  linear-gradient(to right top, #605f5f 50%, #141313 50%) padding-box;
   background-size: 50% 50%, 50% 50%, .125em $thumb-h/2, 100% 100%, 100% 100%;
+}
+//------------------
+
+//nav
+@mixin naba() {
+  background-color: transparent;
+  position: absolute;
+  top:0;
+  z-index:9;
+}
+
+//nav-wrapper
+@mixin naba-imag() {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  left: 15%;
+}
+
+//-------------------
+
+//tipografia
+@mixin titulos() {
+  position:relative;
+  color: $color-base;
+  top: -47%;
+}
+
+// titulos
+@mixin titulo() {
+  position: relative;
+  margin-top: 2em;
+  background: transparent;
+  z-index: 8;
+  float:left;
+  color: $color-base;
+}
+
+//sub-titulos
+
+@mixin sbtitulos() {
+  position:relative;
+  z-index: 9;
+  float:left;
+  color: $color-base;
+}
+
+//-------------------
+
+//  carrusel
+@mixin wavs-effect() {
+ position: relative;
+    z-index: 8;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 30px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background:$maincolor;
 }

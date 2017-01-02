@@ -8,11 +8,10 @@ body{
 
 
 .slider{ 
-    position: relative; 
-    margin-top: 50px;  
+    position: relative;   
     padding: 15px 15px 10px 15px; 
     border-radius: 10px; 
-    box-shadow: 1px 1px 3px 1px #ddd; 
+    
 }
 .slider label{ 
     position: relative; 
@@ -125,4 +124,14 @@ body{
 .status label span{ 
     color: #888; 
     font-weight: bold; 
+}
+
+#datepicker .btn-large {
+    background-color: #26a69a;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-top: -4vh;
+        left: 2vw;
 }

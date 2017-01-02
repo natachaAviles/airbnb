@@ -1,0 +1,44 @@
+nav {
+    @include naba;
+  }
+
+.nav-wrapper a img {
+    @include naba-imag; 
+}
+
+// Navbar Links
+  ul {
+    margin: 0;
+
+    li {
+      transition: background-color .3s;
+      float: left;
+      padding: 0;
+
+      &.active {
+        background-color: $maincolor;
+      }
+    }
+    a {
+      transition: background-color .3s;
+      
+      color: $color-base;
+      display: block;
+      padding: 0 15px;
+      cursor: pointer;
+
+      &.btn, &.btn-large, &.btn-flat, &.btn-floating {
+        margin-top: -2px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+      &:hover {
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+
+    &.left {
+      float: left;
+    }
+  }

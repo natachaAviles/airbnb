@@ -24,9 +24,8 @@
   }
 
   .slides {
-    background-color: $slider-bg-color;
     margin: 0;
-    height: 400px;
+    height: 500px !important;
 
     li {
       opacity: 0;
@@ -42,7 +41,7 @@
         height: 100%;
         width: 100%;
         background-size: cover;
-        background-position: center;
+        background-position: 100% 100%;
       }
 
       .caption {

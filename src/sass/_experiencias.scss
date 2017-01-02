@@ -1,3 +1,7 @@
 img {
 	@include maxi-imge(100%);
 }
+
+img {
+	padding: 0.5em;
+}

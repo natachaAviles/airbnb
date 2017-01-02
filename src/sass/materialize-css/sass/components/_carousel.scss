@@ -2,14 +2,13 @@
   &.carousel-slider {
     top: 0;
     left: 0;
-    height: 0;
 
     .carousel-fixed-item {
       &.with-indicators {
         bottom: 68px;
       }
 
-      position: absolute;
+      position: relative;
       left: 0;
       right: 0;
       bottom: 20px;
@@ -19,7 +18,7 @@
     .carousel-item {
       width: 100%;
       height: 100%;
-      min-height: 400px;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -48,12 +47,14 @@
     display: none;
     width: 200px;
     height: 400px;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 
     img {
       width: 100%;
+      position: relative;
+      top: 14.3em;
     }
   }
 
@@ -83,3 +84,44 @@
     }
   }
 }
+
+.carousel.carousel-slider {
+  left: 0;
+  height: 580px !important;
+  position: absolute;
+  top: 0;
+}
+
+  .select-wrapper input.select-dropdown {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+  }
+
+  input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+  }
+
+
+
+

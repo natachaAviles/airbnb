@@ -1,0 +1,24 @@
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulo {
+  @include titulo;
+}
+
+.titles {
+  @include titulos;
+
+  h3,
+  h5 {
+    float: left;
+  }
+}
+
+.sub-titulo {
+  @include sbtitulos;
+}
