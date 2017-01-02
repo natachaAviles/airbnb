@@ -6614,11 +6614,30 @@ img {
 
 footer {
   border-top: 1px solid #E3E3E3;
-  padding: 4vh; }
+  padding-top: 4vh; }
+  footer h5 {
+    margin-left: 2vh;
+    font-size: 1em;
+    font-weight: bold; }
   footer a {
-    color: #E3E3E3; }
+    color: #9D9C9C;
+    font-weight: bold; }
   footer select {
-    margin-top: 4vh; }
+    margin-top: 4vh;
+    margin-bottom: 4vh; }
+
+.bloquemenu {
+  margin-left: 10vh; }
+
+.linksubmenu {
+  margin-right: 6vh;
+  margin-top: 7vh; }
+
+.fa {
+  color: #9D9C9C; }
+
+.bottomlinks {
+  padding-top: 4vh; }
 
 html {
   font-family: 'Roboto', sans-serif; }
