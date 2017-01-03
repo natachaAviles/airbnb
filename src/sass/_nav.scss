@@ -7,6 +7,9 @@ nav {
 }
 
 // Navbar Links
+
+nav {
+
   ul {
     margin: 0;
 
@@ -36,3 +39,21 @@ nav {
       float: left;
     }
   }
+}
+
+@media #{$medium-and-down} {
+  .pagination {
+    width: 100%;
+
+    li.prev,
+    li.next {
+      width: 10%;
+    }
+
+    li.pages {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
