@@ -1,12 +1,33 @@
 footer{
-  border-top:1px solid $grayborder;
-  padding:4vh;
+	border-top:1px solid $grayborder;
+	padding-top:4vh;
 
-   a {
-    color:$grayborder;
-  }
+	h5 {
+		margin-left:2vh;
+		font-size:1em;
+		font-weight:bold;
+	}
 
-  select{
-    margin-top:4vh;
-  }
+	a {
+		color:$colorbottomlinks;
+		font-weight:bold;
+	}
+
+	select{
+		margin-top:4vh;
+		margin-bottom:4vh;
+	}
+}
+.bloquemenu{
+	margin-left:10vh;
+}
+.linksubmenu{
+	margin-right:6vh;
+	margin-top:7vh;
+}
+.fa {
+	color:$colorbottomlinks;
+}
+.bottomlinks{
+	padding-top:4vh;
 }
