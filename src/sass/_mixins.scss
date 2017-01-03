@@ -41,8 +41,8 @@
 
 //nav-wrapper
 @mixin naba-imag() {
-  width: 1em;
-  height: 1em;
+  width: 2em;
+  height: 2em;
   position: relative;
   left: 15%;
 }
@@ -80,13 +80,13 @@
 //  carrusel
 @mixin wavs-effect() {
  position: relative;
-    z-index: 8;
-    color: #fff;
-    border-radius: 4px;
-    padding: 0 30px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    background:$maincolor;
+ z-index: 8;
+ color: #000;
+ border-radius: 14px;
+ padding: 0 30px;
+ margin-bottom: 1em;
+ margin-top: 1em;
+ background: transparent;
 }
 //---------------------
 //search
