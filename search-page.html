@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.css">
 	<link rel="stylesheet" href="node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css">
 	<link rel="icon" href="dist/img/favicon.PNG" type="image/x-icon"/>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<title>Air bnb</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/estilos.css">
+	<title>Airbnb</title>
 	<meta charset="utf-8">
 </head>
 <body>
@@ -16,17 +16,17 @@
 	<section id="fechas">
 		
 		<div class="row">
-			<!--esperar seccion nav para rellenar con date picker-->
+			<!--esperar seccion nat para rellenar con date picker-->
 			<form class="col m6 s12">
 				<div class="row">
 					<div class="col m3 s6">
 						<p>Fechas</p>
 					</div>
 					<div class="col m3 s6">
-						<input type="date" class="datepicker">
+						<input type="date" class="datepicker" value="Llegada">
 					</div>
 					<div class="col m3 s6">
-						<input type="date" class="datepicker">
+						<input type="date" class="datepicker" value="Salida">
 					</div>
 					<div class="col m3 s6">
 						<span>Huespedes</span>
@@ -45,22 +45,35 @@
 					<div class="col m12 s12">
 						<div class="row">
 							<div class="col m3 s6">
-								<p>Tipo de habitacion</p>
+								<p>Tipo de habitación</p>
+								<a class="tooltipped" data-position="right" data-delay="50" data-tooltip="Casa Entera Anuncios En los que tienes todo el lugar para ti.
+								Habitacion Privada:"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
 							</div>
+							<div class="col m9 s6 box-check">
+								<div class="row">
+									<div class="col m4 s6 center">
+										<span class="radio-inline " >
+											<input type="checkbox" id="test5" value="casa"/>
+											<label for="test5"><i class="fa fa-home" aria-hidden="true"></i> Casa Entera</label>
+										</span>
 
-							<p class="radio-inline col m3 s6" >
-								<input type="checkbox" id="test5" value="casa"/>
-								<label for="test5">Casa Entera</label>
-							</p>
-							<p class="radio-inline col m3 s6">
-								<input type="checkbox" id="test6" value="privada" />
-								<label for="test6">Habitacion Privada</label>
-							</p>
-							<p class="radio-inline col m3 s6">
-								<input type="checkbox" id="test7" value="compartida" />
-								<label for="test7">Habitacion Compartida</label>
-							</p>
-
+									</div>
+									<div class="col m4 s6 center segunda">
+										<span class="radio-inline ">
+											<input type="checkbox" id="test6" value="privada" />
+											<label for="test6"><i class="fa fa-bath" aria-hidden="true"></i> Habitación Privada</label>
+										</span>
+										
+									</div>
+									<div class="col m4 s6 center">
+										<span class="radio-inline ">
+											<input type="checkbox" id="test7" value="compartida" />
+											<label for="test7"><i class="fa fa-bed" aria-hidden="true"></i> Habitación Compartida</label>
+										</span>
+										
+									</div>									
+								</div>
+							</div>
 						</div>
 
 
@@ -69,20 +82,25 @@
 				</div>
 				<div class="divider"></div>
 				<div class="row">
+					<div class="col m2 s12">
+						<p>Rango de Precios</p>
+					</div>
 					<div class="col m6 s12">
 						<div data-role="rangeslider">
 							<label for="price-min">Price:</label>
 							<input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
 						</div>
-
+						
 					</div>
+					
 				</div>
 				<div class="row">
+					<div class="divider"></div>
 					<div class="col m12 s12">
 
 						<div class="col m2 s12">
 							<p>Rerserva Inmediata</p>
-							<a class=" btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+							
 						</div>
 						<div class="col m7 s12">
 							<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
@@ -98,22 +116,16 @@
 						</div>
 					</div>
 				</div>
-
-
-
-
-
+				<div class="divider"></div>
 			</form>
 		</div>
-		
-
-
 	</section>
 
 
+
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/ion-rangeslider/js/ion.rangeSlider.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/materialize.js"></script>
 	<script type="text/javascript" src="dist/js/script.min.js"></script>
 	<script type="text/javascript" src="src/js/main.js"></script>	
 </body>

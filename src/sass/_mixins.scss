@@ -88,3 +88,11 @@
     margin-top: 1em;
     background:$maincolor;
 }
+//---------------------
+//search
+@mixin fondospan($width,$height, $background-color,$padding){
+  width:$width;
+  height:$height;
+  background-color:$background-color;
+  padding:$padding;
+}
