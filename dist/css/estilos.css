@@ -6363,23 +6363,23 @@ nav {
   position: relative;
   left: 15%; }
 
-ul {
+nav ul {
   margin: 0; }
-  ul li {
+  nav ul li {
     transition: background-color .3s;
     float: left;
     padding: 0; }
-    ul li.active {
+    nav ul li.active {
       background-color: #FF7E82; }
-  ul a {
+  nav ul a {
     transition: background-color .3s;
     color: #000;
     display: block;
     padding: 0 15px;
     cursor: pointer; }
-    ul a.btn, ul a.btn-large, ul a.btn-large, ul a.btn-flat, ul a.btn-floating {
+    nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
       margin-top: 1em; }
-  ul.left {
+  nav ul.left {
     float: left; }
 
 .white-text h2 {
@@ -6424,7 +6424,8 @@ ul {
   margin-right: 0rem; }
 
 #datepicker {
-  position: relative; }
+  position: relative;
+  top: 4em; }
   #datepicker p {
     font-family: 'Roboto', sans-serif; }
   #datepicker .container {
@@ -6447,6 +6448,9 @@ ul {
 
 .padd {
   padding: 0em 1em; }
+
+.exp {
+  margin-top: 4em; }
 
 img {
   width: 100%; }
@@ -6569,21 +6573,16 @@ footer {
   border-top: 1px solid #E3E3E3;
   padding-top: 4vh; }
   footer h5 {
-    margin-left: 2vh;
     font-size: 1em;
     font-weight: bold; }
   footer a {
-    color: #9D9C9C;
+    color: #9D9C9C !important;
     font-weight: bold; }
   footer select {
-    margin-top: 4vh;
-    margin-bottom: 4vh; }
-
-.bloquemenu {
-  margin-left: 10vh; }
+    margin-top: 1em;
+    margin-bottom: 1em; }
 
 .linksubmenu {
-  margin-right: 6vh;
   margin-top: 7vh; }
 
 .fa {
@@ -6591,6 +6590,28 @@ footer {
 
 .bottomlinks {
   padding-top: 4vh; }
+
+.bloqmenu {
+  position: relative;
+  padding-left: 4em; }
+
+.bottomlinks a {
+  color: #9D9C9C;
+  padding-bottom: 4em;
+  font-weight: bold;
+  position: relative;
+  left: 4em;
+  top: 0.5em; }
+
+.bottomlinks img {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute; }
+
+i.right {
+  float: right;
+  position: relative;
+  top: 0.5em; }
 
 html {
   font-family: 'Roboto', sans-serif; }
