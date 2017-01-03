@@ -17,7 +17,7 @@
 		
 		<div class="row">
 			<!--esperar seccion nat para rellenar con date picker-->
-			<form class="col m6 s12">
+			<form class="col m6 s12 ">
 				<div class="row">
 					<div class="col m3 s6">
 						<p>Fechas</p>
@@ -51,24 +51,24 @@
 							</div>
 							<div class="col m9 s6 box-check">
 								<div class="row">
-									<div class="col m4 s6 center">
+									<div class="col m4 s6 segunda">
 										<span class="radio-inline " >
 											<input type="checkbox" id="test5" value="casa"/>
-											<label for="test5"><i class="fa fa-home" aria-hidden="true"></i> Casa Entera</label>
+											<label for="test5"><i class="fa fa-home" aria-hidden="true"></i> Casa Entera  </label>
 										</span>
 
 									</div>
-									<div class="col m4 s6 center segunda">
+									<div class="col m4 s6 ">
 										<span class="radio-inline ">
 											<input type="checkbox" id="test6" value="privada" />
 											<label for="test6"><i class="fa fa-bath" aria-hidden="true"></i> Habitación Privada</label>
 										</span>
 										
 									</div>
-									<div class="col m4 s6 center">
+									<div class="col m4 s6">
 										<span class="radio-inline ">
 											<input type="checkbox" id="test7" value="compartida" />
-											<label for="test7"><i class="fa fa-bed" aria-hidden="true"></i> Habitación Compartida</label>
+											<label for="test7"><i class="fa fa-bed" aria-hidden="true"></i>Habitación Compartida</label>
 										</span>
 										
 									</div>									
@@ -86,10 +86,8 @@
 						<p>Rango de Precios</p>
 					</div>
 					<div class="col m6 s12">
-						<div data-role="rangeslider">
-							<label for="price-min">Price:</label>
-							<input type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
-						</div>
+
+						<input type="range" min="10" max="1000" step="10" id="range" value="300" data-orientation="vertical">
 						
 					</div>
 					
@@ -99,7 +97,7 @@
 					<div class="col m12 s12">
 
 						<div class="col m2 s12">
-							<p>Rerserva Inmediata</p>
+							<p><i class="fa fa-bolt" aria-hidden="true"></i>Rerserva Inmediata</p>
 							
 						</div>
 						<div class="col m7 s12">
@@ -116,17 +114,26 @@
 						</div>
 					</div>
 				</div>
-				<div class="divider"></div>
+				<div class="divider"></div>	
 			</form>
+			<aside>
+				<div class="col m6">
+					<div id="map" style="width:100%;height:500px"></div>
+				</div>
+			</aside>
 		</div>
+
 	</section>
 
 
 
-	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="dist/js/materialize.js"></script>
-	<script type="text/javascript" src="dist/js/script.min.js"></script>
-	<script type="text/javascript" src="src/js/main.js"></script>	
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI-ZZq7ouJJjoqQW05ZOCa3ewtr_vjHOQ&callback=initMap">
+</script>
+<script type="text/javascript" src="dist/js/materialize.js"></script>
+<script type="text/javascript" src="dist/js/script.min.js"></script>
+<script type="text/javascript" src="src/js/main.js"></script>
+<script src="node_modules/ion.rangeslider/js/ion.rangeSlider.js"></script>	
 </body>
 </html>

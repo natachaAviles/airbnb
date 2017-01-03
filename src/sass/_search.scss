@@ -47,9 +47,9 @@
     right: 0px; 
 }
 .radio-inline{
-    @include fondospan(70%, 70px, $grisclaro,5%);
+    @include fondospan(100%, 80px, $grisclaro,7%);
     i,label{
-       font-size:80%;
+       font-size:90%;
        vertical-align: middle;
        color:$color-base;  
     }
@@ -59,4 +59,11 @@
 .box-check{
     margin-top:4%;
     margin-bottom:4%;
+}
+.segunda{
+    margin-right:-7.5%;
+}
+
+[type="checkbox"] + label{
+    padding-left: 21px;
 }
