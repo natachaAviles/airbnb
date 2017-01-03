@@ -6576,13 +6576,26 @@ img {
 [type="checkbox"] + label {
   padding-left: 21px; }
 
+#map {
+  height: 90vh; }
+
+#map > div {
+  position: fixed;
+  right: 0; }
+
 img {
   width: 100%; }
 
 img {
   padding: 0.5em; }
 
-<<<<<<< HEAD
+.fa-chevron-right {
+  position: relative;
+  float: right;
+  top: -11em;
+  left: 1em;
+  font-size: 21px; }
+
 .filters {
   padding-top: 10vh; }
   .filters .fa-star {
@@ -6709,14 +6722,6 @@ img {
 
 [type="checkbox"] + label {
   padding-left: 21px; }
-=======
-.fa-chevron-right {
-  position: relative;
-  float: right;
-  top: -11em;
-  left: 1em;
-  font-size: 21px; }
->>>>>>> f151e8ff249bc1a139770db303f10cae200b7098
 
 footer {
   border-top: 1px solid #E3E3E3;
