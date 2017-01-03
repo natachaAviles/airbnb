@@ -67,3 +67,11 @@
 [type="checkbox"] + label{
     padding-left: 21px;
 }
+#map{
+    height: 90vh;
+
+}
+#map > div{
+    position:fixed;
+    right: 0;
+}
