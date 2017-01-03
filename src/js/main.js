@@ -39,3 +39,37 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 		}
 	});
 }
+
+$(document).ready(function() {
+	
+    $('#datepicker-llegada').datepicker({
+        onSelect: function () {
+            //alert($(this).val());
+            localStorage.setItem("lastSelectedDate", $(this).val());
+        }
+    });
+
+    if (localStorage.getItem("lastSelectedDate") !== null) {
+        $('#datepicker-llegada').datepicker("setDate", new Date(localStorage.getItem("lastSelectedDate")));
+    }
+
+    $('#datepicker-salida').datepicker({
+        onSelect: function () {
+            //alert($(this).val());
+            localStorage.setItem("lastSelectedDate", $(this).val());
+        }
+    });
+
+    if (localStorage.getItem("lastSelectedDate") !== null) {
+        $('#datepicker-salida').datepicker("setDate", new Date(localStorage.getItem("lastSelectedDate")));
+    }
+
+
+	$('#huesped').change(function() {
+   	 	localStorage.setItem($(this).attr('id'), $(this).val());
+	})
+
+	
+});
+
+

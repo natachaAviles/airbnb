@@ -6582,9 +6582,15 @@ img {
 img {
   padding: 0.5em; }
 
-<<<<<<< HEAD
+.fa-chevron-right {
+  position: relative;
+  float: right;
+  top: -11em;
+  left: 1em;
+  font-size: 21px; }
+
 .filters {
-  padding-top: 10vh; }
+  padding-top: 13vh; }
   .filters .fa-star {
     color: #02BE8B; }
   .filters .fa-bolt {
@@ -6709,14 +6715,6 @@ img {
 
 [type="checkbox"] + label {
   padding-left: 21px; }
-=======
-.fa-chevron-right {
-  position: relative;
-  float: right;
-  top: -11em;
-  left: 1em;
-  font-size: 21px; }
->>>>>>> f151e8ff249bc1a139770db303f10cae200b7098
 
 footer {
   border-top: 1px solid #E3E3E3;
