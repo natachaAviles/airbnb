@@ -1,3 +1,4 @@
+
 .white-text h2 {
 	position:relative;
 }
@@ -39,4 +40,15 @@
 
 .waves-effect {
   @include wavs-effect;
+}
+
+.waves-effec {
+    position: relative;
+    z-index: 8;
+    color: #000;
+    border-radius: 7px;
+    padding: 0 30px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background: transparent;
 }

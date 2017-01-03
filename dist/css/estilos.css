@@ -6382,6 +6382,16 @@ nav ul {
   nav ul.left {
     float: left; }
 
+@media only screen and (max-width: 992px) {
+  .pagination {
+    width: 100%; }
+    .pagination li.prev,
+    .pagination li.next {
+      width: 10%; }
+    .pagination li.pages {
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap; } }
 .white-text h2 {
   position: relative; }
 
@@ -6413,7 +6423,17 @@ nav ul {
   position: relative;
   z-index: 8;
   color: #000;
-  border-radius: 14px;
+  border-radius: 7px;
+  padding: 0 30px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  background: #FF7E82; }
+
+.waves-effec {
+  position: relative;
+  z-index: 8;
+  color: #000;
+  border-radius: 7px;
   padding: 0 30px;
   margin-bottom: 1em;
   margin-top: 1em;
