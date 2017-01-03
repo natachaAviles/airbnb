@@ -1,2 +1,5 @@
 node_modules/*
-dist
+dist/css/*
+dist/js/*
+dist/index.html
+dist/search-page.html
