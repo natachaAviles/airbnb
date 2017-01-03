@@ -1,5 +1,6 @@
  $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 50});
+
   	$("#range").ionRangeSlider({
             hide_min_max: true,
             keyboard: true,
@@ -10,7 +11,7 @@
             type: 'double',
             step: 1,
             prefix: "$",
-            grid: true
+            grid: true,
      });
 
 

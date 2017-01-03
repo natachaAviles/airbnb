@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script src="https://use.fontawesome.com/253bce21cd.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/estilos.css">
+	<title>Air bnb</title>
+	<link rel="icon" href="dist/img/favicon.PNG" type="image/x-icon"/>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav>
+		<div class="nav-wrapper white">
+			<a href="#" class="brand-logo"><img src="dist/img/favicon.PNG"></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="sass.html">Conviértete en anfitrión</a></li>
+				<li><a href="badges.html">Ayuda</a></li>
+				<li><a href="collapsible.html">Resgístrate</a></li>
+				<li><a href="collapsible.html">Iniciar sección</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--TERMINA NAVBAR-->
+	<section class="filters">
+		<div class="row">
+			<div class="col m7 s12">
+				<div class="row">
+					<div class="col m2 s12">
+						<p>Fechas</p>
+					</div>
+					<div class="col m3 s12">
+						<input type="date" class="datepicker" value="Llegada">
+					</div>
+					<div class="col m3 s12">
+						<input type="date" class="datepicker" value="Salida">
+					</div>
+					<div class="col m4 s12">
+						<span>Huespedes</span>
+						<select>
+							<option value="1">1 Huesped</option>
+							<option value="2">2 Huespedes</option>
+							<option value="3">3 Huespedes</option>
+							<div class="divider"></div>
+							<option value="4">1 Bebe</option>
+						</select>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row checkboxrow">
+					<div class="col m2 s12">
+						<p>Tipo de habitación</p>
+						<a class="tooltipped" data-position="right" data-delay="50" data-tooltip="Casa Entera Anuncios En los que tienes todo el lugar para ti.
+						Habitacion Privada:"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+					</div>
+					<div class="col m3 s12">
+						<span class="radio-inline " >
+							<input type="checkbox" id="test5" value="casa"/>
+							<label for="test5"><i class="fa fa-home" aria-hidden="true"></i> Casa Entera  </label>
+						</span>
+					</div>
+					<div class="col m3 s12">
+						<span class="radio-inline ">
+							<input type="checkbox" id="test6" value="privada" />
+							<label for="test6"><i class="fa fa-bath" aria-hidden="true"></i> Habitación Privada</label>
+						</span>
+					</div>
+					<div class="col m3 s12">
+						<span class="radio-inline ">
+							<input type="checkbox" id="test7" value="compartida" />
+							<label for="test7"><i class="fa fa-bed" aria-hidden="true"></i>Habitación Compartida</label>
+						</span>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row pricerange">
+					<div class="col m3 s12">
+						<p>Rango de precios</p>
+					</div>
+					<div class="col m9 s12">
+						<input type="range" min="10" max="1000" step="10" id="range" value="300" data-orientation="vertical">
+						<span class="left">$/.520</span>
+						<span class="right">$/.50,000+</span>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row switchrow">
+					<div class="col m2 m12">
+						<p><i class="fa fa-bolt" aria-hidden="true"></i>Rerserva Inmediata</p>
+					</div>
+					<div class="col m8 m12">
+						<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+					</div>
+					<div class="col m2 m12">
+						<div class="switch">
+							<label>
+								<input type="checkbox">
+								<span class="lever"></span>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row rowfiltros">
+					<div class="col m4 s12">
+						<a class="waves-effect waves-light btn btnfilters">Filtros</a>
+					</div>
+					<div class="col m8 s12">
+						<p>Solo hay un 14% de disponibilidad de alojamiento disponible para estas fechas</p>
+						<p>Te recomendamos que reserves un alojamiento lo antes posible</p>
+					</div>
+					<span>Pueden aplicarse tarifas o impuestos adicionales</span>
+				</div>
+				<section id="filtros-avanzados"><!--SECCION FILTROS AVANZADOS-->
+					<div class="row" id="filtrosavanzados">
+						<div class="col m2 s12">
+							<p>Tamaño</p>
+						</div>
+						<div class="col m4 s12">
+							<select class="browser-default">
+								<option value="" disabled selected>Habitaciones</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+						<div class="col m3 s12">
+							<select class="browser-default">
+								<option value="" disabled selected>Baños</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+						<div class="col m3 s12">
+							<select class="browser-default">
+								<option value="" disabled selected>Camas</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m2 s12">
+							<p>Opciones</p>
+						</div>
+						<div class="col m10 s12">
+							<p> <i class="fa fa-fire" aria-hidden="true"></i>SuperHost</p>
+							<p>
+								<input type="checkbox" id="test8" />
+								<label for="test8">Quedate en casa de anfitriones excepcionales</label>
+							</p>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="row">
+						<div class="col m2 s12">
+							<p>Servicios</p>
+						</div>
+						<div class="col m4 s12">
+							<p>
+								<input type="checkbox" id="test9" />
+								<label for="test9">Internet inalambrico (wifi)</label>
+							</p>
+						</div>
+						<div class="col m3  s12">
+							<p>
+								<input type="checkbox" id="test10" />
+								<label for="test10">TV</label>
+							</p>
+						</div>
+						<div class="col m3 s12">
+							<p>
+								<input type="checkbox" id="test11" />
+								<label for="tes11">Cocina</label>
+							</p>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="row">
+						<div class="col m2 s12">
+							<p>Servicios</p>
+						</div>
+						<div class="col m4 s12">
+							<p>
+								<input type="checkbox" id="test12" />
+								<label for="test12">Edificio con ascensor</label>
+							</p>
+						</div>
+						<div class="col m3  s12">
+							<p>
+								<input type="checkbox" id="test13" />
+								<label for="test13">Gimnasio</label>
+							</p>
+						</div>
+						<div class="col m3 s12">
+							<p>
+								<input type="checkbox" id="test14" />
+								<label for="test14">Parking gratuito incluido</label>
+							</p>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="row">
+						<div class="col m2 s12">
+							<p>Normas de la casa</p>
+						</div>
+						<div class="col m4 s12">
+							<p>
+								<input type="checkbox" id="test15" />
+								<label for="test15">Admite mascotas</label>
+							</p>
+						</div>
+						<div class="col m3  s12">
+							<p>
+								<input type="checkbox" id="test16" />
+								<label for="test16">Apto para eventos</label>
+							</p>
+						</div>
+						<div class="col m3 s12">
+							<p>
+								<input type="checkbox" id="test17" />
+								<label for="test17">Aptos para fumadores</label>
+							</p>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="row">
+						<div class="col m2 s12">
+							<p>Vecindarios</p>
+						</div>
+						<div class="col m4 s12">
+							<p>
+								<input type="checkbox" id="test18" />
+								<label for="test18">SoMa</label>
+							</p>
+						</div>
+						<div class="col m3  s12">
+							<p>
+								<input type="checkbox" id="test19" />
+								<label for="test19">Mission district</label>
+							</p>
+						</div>
+						<div class="col m3 s12">
+							<p>
+								<input type="checkbox" id="test20" />
+								<label for="test20">Daly city</label>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m6 s6">
+							<a class="waves-effect waves-light btn btnfilters center">Cancelar</a>
+						</div>
+						<div class="col m6 s6">
+							<a class="waves-effect waves-light btn redbutton center">Aplicar filtros</a>
+						</div>
+					</div>
+				</section>
+				<div class="row firstpictures">
+					<div class="col m6 s12">
+						<img src="dist/img/holtel1.jpg" alt="" class="responsive-img">
+						<p>Private room with hallway</p>
+						<label>Habitacion privada | 2 huespedes.</label>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+					<div class="col m6 s12">
+						<img src="dist/img/hotel2.jpg" alt="" class="responsive-img">
+						<p>Calming Oasis with view NEW!</p>
+						<label>Habitacion privada | 2 huespedes.</label>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="row secondpictures">
+					<div class="col m6 s12">
+						<img src="dist/img/hotel3.jpg" alt="" class="responsive-img">
+						<p>Calming Oasis with view NEW!</p>
+						<label>Habitacion privada | 2 huespedes.</label>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+					<div class="col m6 s12">
+						<img src="dist/img/hotel4.jpg" alt="" class="responsive-img">
+						<p>Calming Oasis with view NEW!</p>
+						<label>Habitacion privada | 2 huespedes.</label>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+					</div>
+				</div>
+			</div>
+			<div class="col m5 s12"><!--SECCION MAPA-->
+				<div id="map" style="width:100%;height:1700px"></div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="row">
+			<div class="col m12 s12">
+				<ul class="pagination">
+				<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+					<li class="waves-effect"><a href="#!">1</a></li>
+					<li class="waves-effect"><a href="#!">2</a></li>
+					<li class="waves-effect"><a href="#!">3</a></li>
+					<li class="waves-effect"><a href="#!">4</a></li>
+					<li class="waves-effect"><a href="#!">5</a></li>
+					<li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI-ZZq7ouJJjoqQW05ZOCa3ewtr_vjHOQ&callback=initMap">
+</script>
+<script type="text/javascript" src="dist/js/materialize.js"></script>
+<script type="text/javascript" src="dist/js/script.min.js"></script>
+<script type="text/javascript" src="src/js/main.js"></script>	
+</body>
+</html>
